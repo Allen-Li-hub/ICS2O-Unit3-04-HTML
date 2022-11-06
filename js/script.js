@@ -23,7 +23,7 @@ function calculateVolumeClicked() {
   const fahrenheit = parseFloat(document.getElementById("fahrenheit").value)
 
   // process
-  const Celsius = (fahrenheit - 32) * (5/9)
+  const Celsius = (fahrenheit - 32) * (5 / 9)
 
   // output
   document.getElementById("volume").innerHTML =
