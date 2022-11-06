@@ -26,6 +26,6 @@ function temperatureConverter() {
   const Celsius = (fahrenheit - 32) * (5 / 9)
 
   // output
-  document.getElementById("volume").innerHTML =
+  document.getElementById("Celsius").innerHTML =
     "Celsius is: " + Celsius.toFixed(2) + " °C."
 }
