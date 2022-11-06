@@ -10,8 +10,8 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-Unit3-02-HTML-lighthouse/sw.js", {
-    scope: "/ICS2O-Unit3-02-HTML-lighthouse/",
+  navigator.serviceWorker.register("/ICS2O-Unit3-04-HTML/sw.js", {
+    scope: "/ICS2O-Unit3-04-HTML/",
   })
 }
 
@@ -20,14 +20,12 @@ if (navigator.serviceWorker) {
  */
 function calculateVolumeClicked() {
   // input
-  const length = parseFloat(document.getElementById("length").value)
-  const width = parseFloat(document.getElementById("width").value)
-  const height = parseFloat(document.getElementById("height").value)
+  const fahrenheit = parseFloat(document.getElementById("fahrenheit").value)
 
   // process
-  const volume = (length * width * height) / 3
+  const Celsius = (fahrenheit - 32) * (5/9)
 
   // output
   document.getElementById("volume").innerHTML =
-    "Volume is: " + volume.toFixed(2) + " mm³."
+    "Celsius is: " + Celsius.toFixed(2) + " °C."
 }
