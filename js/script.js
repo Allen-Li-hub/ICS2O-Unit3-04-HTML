@@ -18,7 +18,7 @@ if (navigator.serviceWorker) {
 /**
  * This function displays an alert.
  */
-function calculateVolumeClicked() {
+function temperatureConverter() {
   // input
   const fahrenheit = parseFloat(document.getElementById("fahrenheit").value)
 
